@@ -1,0 +1,39 @@
+.home__container {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	height: fit-content;
+
+	.carousel__container {
+		height: 100%;
+		width: 100%;
+		display: flex;
+
+		.image__container {
+			width: fit-content;
+			max-height: 91vh;
+
+			.image__item {
+				width: 100vw;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.overlay__container {
+		position: absolute;
+		background-color: #231f20b5;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color: #f7f7f7;
+		z-index: 50;
+
+		.text_center {
+			padding: 1rem 0;
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+}
